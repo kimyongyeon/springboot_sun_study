@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>member 들만  들어올 수 있음</h1>
+    <div sec:authorize="hasRole('USER')"> Has <b>User</b> Role </div>
+    <div sec:authorize="hasRole('MANAGER')"> Has <b>MANAGER</b> Role </div>
+    <div sec:authorize="hasRole('ADMIN')"> Has <b>ADMIN</b> Role </div>
+
+    <div sec:authorize="isAuthenticated()">
+        Only Authenticated user can see this text
+    </div>
+
+    Authenticated Username :
+    <p sec:authentication="name"></p>
+    Authenticated user roles :
+    <p sec:authentication="principal.authorities"></p>
+</body>
+</html>

@@ -1,14 +1,27 @@
+
 spring:
+  profiles:
+    include: oauth
   datasource:
     url: jdbc:mysql://localhost:3306/bootex?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC
     username: 'root'
     password: '1234'
-    driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: update # 조심해서 사용해야됩니다
     properties:
       hibernate:
-        format_sql: true
+      format_sql: true
     show-sql: true
-
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          web: trace
+    com:
+      study:
+        yongyeon:
+          sunday:
+            spring:
+              springsunday: debug
