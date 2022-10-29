@@ -9,3 +9,4 @@
 ### 파트 4
 * 코드 : https://github.com/hihisososo/mreview
 * 정리 : https://childlike-organ-7c7.notion.site/chapter4-0477b55162794e7aa8f3dfe12310dab7
+* 정리2 : https://childlike-organ-7c7.notion.site/chapter4_2-38634cb8e1354a0489673106c9a1d197
